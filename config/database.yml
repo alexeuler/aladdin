@@ -22,4 +22,9 @@ test:
 
 production:
   adapter: postgresql
+  encoding: unicode
+  host: localhost
   database: spree_db
+  pool: 5
+  username: <%=ENV["PG_USER"]%>
+  password: <%=ENV["PG_PASS"]%>
