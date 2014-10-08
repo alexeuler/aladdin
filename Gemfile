@@ -45,6 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'thin'
 
 gem 'spree', '2.3.4'
 gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-3-stable'
