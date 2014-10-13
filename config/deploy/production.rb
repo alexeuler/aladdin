@@ -20,10 +20,13 @@ server '178.62.205.249', user: 'alex', roles: %w{app}, my_property: :my_value
 
 namespace :images do
   task :symlink do
-    run "rm -rf #{release_path}/public/spree"
-    run "ln -nfs #{shared_path}/spree #{release_path}/public/spree"
+    on roles(:app) do
+      execute "rm -rf #{release_path}/public/spree"
+      execute "ln -nfs #{shared_path}/spree #{release_path}/public/spree"
+    end
   end
 end
+
 after "deploy:published", "images:symlink"
 
 # Custom SSH Options
