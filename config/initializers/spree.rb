@@ -12,6 +12,7 @@ Spree.config do |config|
   config.allow_ssl_in_production=false
   config.send_core_emails=false
   config.default_country_id=97
+  config.address_requires_state=false
 end
 
 Spree.user_class = "Spree::User"
