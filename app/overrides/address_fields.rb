@@ -1,6 +1,9 @@
 Deface::Override.new(:virtual_path => 'spree/checkout/address/_form',
-                     :remove => 'erb[loud]:contains("address2")')
+                     :remove => 'erb[loud]:contains("address2")',
+                     :name => 'kill address2')
 Deface::Override.new(:virtual_path => 'spree/checkout/address/_form',
-                     :remove => 'erb[loud]:contains("lastname")')
+                     :remove => 'erb[loud]:contains("lastname")',
+                     :name => 'kill lastname')
 Deface::Override.new(:virtual_path => 'spree/checkout/address/_form',
-                     :remove => 'erb[loud]:contains("zipcode")')
+                     :remove => 'erb[loud]:contains("zipcode")',
+                     :name => 'kill zipcode')
