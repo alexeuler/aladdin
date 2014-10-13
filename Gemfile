@@ -45,6 +45,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'russian'
+
 gem 'thin'
 
 gem 'spree', '2.3.4'
