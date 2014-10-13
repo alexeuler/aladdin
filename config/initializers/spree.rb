@@ -11,6 +11,7 @@ Spree.config do |config|
   # config.track_inventory_levels = false
   config.allow_ssl_in_production=false
   config.send_core_emails=false
+  config.default_country_id=97
 end
 
 Spree.user_class = "Spree::User"
